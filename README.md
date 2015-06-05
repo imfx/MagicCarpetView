@@ -8,6 +8,10 @@ MagicCarpetView
 
 ## Collaboration
 
+* Prepare Documentation
+
+## Collaboration
+
 Feel free to collaborate with ideas, issues and/or pull requests.
 
 ## License
