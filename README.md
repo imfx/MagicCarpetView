@@ -11,4 +11,4 @@ MagicCarpetView
 Feel free to collaborate with ideas, issues and/or pull requests.
 
 ## License
-FFBackgroundParallax is available under the [MIT](http://opensource.org/licenses/MIT) license. See the LICENSE file for more info.
+MagicCarpetView is available under the [MIT](http://opensource.org/licenses/MIT) license. See the LICENSE file for more info.
