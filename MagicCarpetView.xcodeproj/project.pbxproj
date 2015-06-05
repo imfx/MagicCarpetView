@@ -14,6 +14,9 @@
 		DC3289EC1B22405F0010DED3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3289EB1B22405F0010DED3 /* Images.xcassets */; };
 		DC3289EF1B22405F0010DED3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC3289ED1B22405F0010DED3 /* LaunchScreen.xib */; };
 		DC3289FB1B22405F0010DED3 /* MagicCarpetViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3289FA1B22405F0010DED3 /* MagicCarpetViewTests.m */; };
+		DC328A061B22415E0010DED3 /* MagicCarpetView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC328A051B22415E0010DED3 /* MagicCarpetView.m */; };
+		DC328A0D1B2245510010DED3 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC328A0C1B2245510010DED3 /* CardView.m */; };
+		DC328A111B22456A0010DED3 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC328A101B22456A0010DED3 /* CardView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		DC3289F41B22405F0010DED3 /* MagicCarpetViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicCarpetViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3289F91B22405F0010DED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC3289FA1B22405F0010DED3 /* MagicCarpetViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicCarpetViewTests.m; sourceTree = "<group>"; };
+		DC328A041B22415E0010DED3 /* MagicCarpetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicCarpetView.h; sourceTree = "<group>"; };
+		DC328A051B22415E0010DED3 /* MagicCarpetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicCarpetView.m; sourceTree = "<group>"; };
+		DC328A0B1B2245510010DED3 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
+		DC328A0C1B2245510010DED3 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
+		DC328A101B22456A0010DED3 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		DC328A121B225D690010DED3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,7 @@
 		DC3289D21B22405F0010DED3 = {
 			isa = PBXGroup;
 			children = (
+				DC328A121B225D690010DED3 /* README.md */,
 				DC3289DD1B22405F0010DED3 /* MagicCarpetView */,
 				DC3289F71B22405F0010DED3 /* MagicCarpetViewTests */,
 				DC3289DC1B22405F0010DED3 /* Products */,
@@ -81,13 +91,10 @@
 		DC3289DD1B22405F0010DED3 /* MagicCarpetView */ = {
 			isa = PBXGroup;
 			children = (
-				DC3289E21B22405F0010DED3 /* AppDelegate.h */,
-				DC3289E31B22405F0010DED3 /* AppDelegate.m */,
-				DC3289E51B22405F0010DED3 /* ViewController.h */,
-				DC3289E61B22405F0010DED3 /* ViewController.m */,
-				DC3289E81B22405F0010DED3 /* Main.storyboard */,
-				DC3289EB1B22405F0010DED3 /* Images.xcassets */,
-				DC3289ED1B22405F0010DED3 /* LaunchScreen.xib */,
+				DC328A071B2244FE0010DED3 /* MagicCarpetView */,
+				DC328A0A1B22451A0010DED3 /* App */,
+				DC328A091B2245100010DED3 /* Resources */,
+				DC328A081B2245070010DED3 /* AppDelegate */,
 				DC3289DE1B22405F0010DED3 /* Supporting Files */,
 			);
 			path = MagicCarpetView;
@@ -117,6 +124,46 @@
 				DC3289F91B22405F0010DED3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC328A071B2244FE0010DED3 /* MagicCarpetView */ = {
+			isa = PBXGroup;
+			children = (
+				DC328A041B22415E0010DED3 /* MagicCarpetView.h */,
+				DC328A051B22415E0010DED3 /* MagicCarpetView.m */,
+			);
+			name = MagicCarpetView;
+			sourceTree = "<group>";
+		};
+		DC328A081B2245070010DED3 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DC3289E21B22405F0010DED3 /* AppDelegate.h */,
+				DC3289E31B22405F0010DED3 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DC328A091B2245100010DED3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC3289E81B22405F0010DED3 /* Main.storyboard */,
+				DC3289EB1B22405F0010DED3 /* Images.xcassets */,
+				DC3289ED1B22405F0010DED3 /* LaunchScreen.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DC328A0A1B22451A0010DED3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DC3289E51B22405F0010DED3 /* ViewController.h */,
+				DC3289E61B22405F0010DED3 /* ViewController.m */,
+				DC328A0B1B2245510010DED3 /* CardView.h */,
+				DC328A0C1B2245510010DED3 /* CardView.m */,
+				DC328A101B22456A0010DED3 /* CardView.xib */,
+			);
+			name = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +248,7 @@
 			files = (
 				DC3289EA1B22405F0010DED3 /* Main.storyboard in Resources */,
 				DC3289EF1B22405F0010DED3 /* LaunchScreen.xib in Resources */,
+				DC328A111B22456A0010DED3 /* CardView.xib in Resources */,
 				DC3289EC1B22405F0010DED3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +269,9 @@
 			files = (
 				DC3289E71B22405F0010DED3 /* ViewController.m in Sources */,
 				DC3289E41B22405F0010DED3 /* AppDelegate.m in Sources */,
+				DC328A0D1B2245510010DED3 /* CardView.m in Sources */,
 				DC3289E11B22405F0010DED3 /* main.m in Sources */,
+				DC328A061B22415E0010DED3 /* MagicCarpetView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
