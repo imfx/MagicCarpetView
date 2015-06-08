@@ -16,16 +16,11 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MagicCarpetView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "UIView subclass that can allow you to load XIB files in your storyboard maintaining the aspect ratio"
 
   s.description  = <<-DESC
-                   A longer description of MagicCarpetView in Markdown format.
-
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
+                   UIView subclass that can allow you to load XIB files in your storyboard maintaining the aspect ratio
                    DESC
 
   s.homepage     = "https://github.com/rockbarato/MagicCarpetView"
