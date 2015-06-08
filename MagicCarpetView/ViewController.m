@@ -18,8 +18,12 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
+	self.view.backgroundColor = [UIColor purpleColor];
+	
 	CardView *cardView = [[CardView alloc] initWithFrame:CGRectMake(0, 333, 320, 158)];
-	cardView.backgroundColor = [UIColor cyanColor];
+	cardView.backgroundColor = [UIColor greenColor];
+	cardView.contentView.backgroundColor = [UIColor blueColor];
+	cardView.margin = 0.8; // Default is 1.0
 	
 	[self.view addSubview:cardView];
 }

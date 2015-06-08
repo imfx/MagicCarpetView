@@ -10,6 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface MagicCarpetView ()
+
 @end
 
 @implementation MagicCarpetView
@@ -48,6 +49,7 @@
 }
 
 - (void)setLocalVars {
+	_margin = 1;
 	_aspectRatio = 1;
 }
 
@@ -86,12 +88,18 @@
 		}
 	}
 	
-	CGRect finalFrame = CGRectMake(0, 0, finalWidth, finalHeight);
+	CGRect finalFrame = CGRectMake(0, 0, finalWidth * _margin, finalHeight * _margin);
 	
 	// Set final frames for all views
 	self.contentView.frame = finalFrame;
 	
 	self.contentView.center = [self convertPoint:self.center fromView:self.superview];
+}
+
+# pragma mark - Setters
+- (void)setMargin:(CGFloat)margin {
+	_margin = margin;
+	[self setNeedsLayout];
 }
 
 @end

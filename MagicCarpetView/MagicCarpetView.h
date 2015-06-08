@@ -12,5 +12,6 @@
 
 @property (nonatomic, strong) UIView *contentView;
 @property (nonatomic) CGFloat aspectRatio;
+@property (nonatomic) CGFloat margin;
 
 @end
