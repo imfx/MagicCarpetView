@@ -20,7 +20,9 @@ Pod::Spec.new do |s|
   s.summary      = "UIView subclass that can allow you to load XIB files in your storyboard maintaining the aspect ratio"
 
   s.description  = <<-DESC
-                   UIView subclass that can allow you to load XIB files in your storyboard maintaining the aspect ratio
+                   UIView subclass that can allow you to load XIB files in your storyboard maintaining the aspect ratio.
+
+                   Also you have some properties like `margin` and `aspectRatio` to control the view itself
                    DESC
 
   s.homepage     = "https://github.com/rockbarato/MagicCarpetView"
