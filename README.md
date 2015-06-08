@@ -10,7 +10,7 @@ MagicCarpetView
 > Instead of adding the source files directly to your project, you may want to consider using [CocoaPods](http://cocoapods.org/) to manage your dependencies. Follow the instructions on the CocoaPods site to install the gem, and specify `MagicCarpetView` as a dependency in your `Podfile` with
 
 ```ruby
-pod 'MagicCarpetView', '~> 0.0.1'
+pod 'MagicCarpetView'
 ```
 
 But if you want to do it the old fashioned way, just add `MagicCarpetView.h/m` files to your project.
